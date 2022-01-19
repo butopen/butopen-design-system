@@ -1,0 +1,27 @@
+{
+  "name": "@butopen/design-system",
+  "version": "1.0.0",
+  "description": "A pure SCSS and Tailwind Design System. No JS. Framework agnostic",
+  "main": "dist/index.css",
+  "scripts": {
+    "start": "node build.js -w",
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "browser-sync": "^2.27.7",
+    "chokidar": "^3.5.2",
+    "postcss": "^8.4.4",
+    "postcss-easy-import": "^3.0.0",
+    "postcss-nested": "^5.0.6",
+    "sass": "^1.45.0",
+    "tailwindcss": "^3.0.1"
+  },
+  "author": "",
+  "license": "MIT",
+  "keywords": ["design-system", "tailwind", "SASS", "SCSS"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/butopen/bods"
+  }
+}

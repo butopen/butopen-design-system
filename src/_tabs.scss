@@ -1,0 +1,16 @@
+$main-color: var(--bo-theme-color);
+
+.bo-tabs {
+  @apply flex bg-white ;
+}
+
+.bo-tab {
+  @apply py-2 px-6 cursor-pointer bg-gray-100 opacity-30;
+  border-bottom: 2px solid black;
+  &.active {
+    @apply bg-white opacity-100;
+    border-bottom: 2px solid $main-color;
+    color: $main-color;
+  }
+}
+

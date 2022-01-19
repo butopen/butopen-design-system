@@ -1,0 +1,24 @@
+$main-color: var(--bo-theme-color);
+
+.bo-button {
+  @apply cursor-pointer opacity-90 no-underline px-2 text-white rounded
+  shadow hover:shadow-md hover:opacity-100 focus:shadow focus:outline-none uppercase whitespace-nowrap;
+  background-color: $main-color;
+
+  &.lg {
+    @apply text-lg uppercase p-2;
+  }
+
+  &.sm {
+    @apply text-xs px-4;
+  }
+
+  &.disabled {
+    @apply text-white bg-gray-400 border-gray-400 cursor-not-allowed pointer-events-none;
+  }
+}
+
+
+.bo-link {
+  @apply text-blue-500 transform-none hover:underline cursor-pointer;
+}

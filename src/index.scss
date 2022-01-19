@@ -1,0 +1,57 @@
+
+:root {
+  --bo-theme-color: #00d789;
+}
+
+@import "tailwind";
+@import "variables";
+@import "tabs";
+@import "buttons";
+@import "forms";
+@import "loading";
+
+.use-bo-design-system {
+
+
+  label {
+    @extend .bo-label;
+  }
+
+  a {
+    @extend .bo-link;
+  }
+
+  button {
+    @extend .bo-button
+  }
+
+  form {
+    @extend .bo-form
+  }
+
+  select {
+    @extend .bo-select
+  }
+
+  input:not([type=checkbox]) {
+    @extend .bo-input
+  }
+
+  textarea {
+    @extend .bo-textarea
+  }
+  
+  .tabs {
+    @extend .bo-tabs
+  }
+  
+  .tab {
+    @extend .bo-tab
+  }
+  
+}
+
+
+
+
+

@@ -1,0 +1,28 @@
+$main-color: var(--bo-theme-color);
+
+.bo-loading {
+  @apply inline-block;
+
+  .spinner {
+    @apply animate-spin w-5 h-5 border-2 rounded-full inline-flex align-middle;
+    border-color: $main-color $main-color transparent transparent;
+  }
+
+  &.full-screen {
+    @apply flex items-center w-screen h-screen bg-gray-700 opacity-70 absolute top-0;
+    .spinner {
+      @apply w-28 h-28 border-4 mx-auto;
+      border-color: $main-color $main-color rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &.full-element {
+    @apply flex items-center w-full h-full bg-gray-700 opacity-70 absolute top-0;
+    .spinner {
+      @apply w-6 h-6 border-2 mx-auto;
+      border-color: $main-color $main-color rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
+    }
+  }
+}
+
+
