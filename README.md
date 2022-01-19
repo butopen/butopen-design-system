@@ -14,7 +14,7 @@ Well, then we expose the few useful functions to speed up the implementation of 
 frontend framework.
 
 ## If you want to use it
-
+Add the css file and customize the main color:
 ```html
 
 <link rel="stylesheet" href="https://unpkg.com/@butopen/design-system@1.0.0/dist/index.css">
@@ -27,17 +27,22 @@ frontend framework.
 ```
 
 ## For developers wanting to customize the sources
-
+1) Install the required packages
 ```pnpm i```
+
 Yes, we use pnpm. if you're still using NPM, then you don't care about time how much as we do ;-)
+
 If you want to save hours, do yourself a favour and install it [https://pnpm.io/](https://pnpm.io/)
 
+
+2) Build from sources
 To build the final CSS file, simply run
 ```pnpm build```
 
 And if you want to extend it or try it live, run
 ```pnpm start```
 
+3) Check the result
 And open the `index.html` file into your browser.
 
 
