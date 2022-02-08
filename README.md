@@ -1,4 +1,4 @@
-# bods - ButOpen Design System
+# ButOpen Design System
 
 A pure SCSS and Tailwind Design System. No JS. Framework-agnostic
 
