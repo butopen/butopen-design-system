@@ -1,0 +1,6 @@
+.bo-header {
+  @apply h-auto md:h-12 bg-white sticky top-0;
+  .bo-header-container {
+    @apply max-w-3xl mx-auto flex flex-wrap items-center h-full;
+  }
+}
