@@ -3,7 +3,12 @@ module.exports = {
   important: true,
   mode: "jit",
   theme: {
-    extend: {},
+    extend: {
+        colors: {
+          "bop": "var(--bo-primary-color)",
+          "bos": "var(--bo-secondary-color)"
+        }
+    },
   },
   plugins: [],
 }

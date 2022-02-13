@@ -1,6 +1,8 @@
 
 :root {
   --bo-theme-color: #00d789;
+  --bo-primary-color: #00d789;
+  --bo-secondary-color: #00c5d7;
 }
 
 @import "tailwind";
@@ -9,6 +11,7 @@
 @import "buttons";
 @import "forms";
 @import "loading";
+@import "header";
 
 .use-bo-design-system {
 
@@ -48,6 +51,16 @@
   .tab {
     @extend .bo-tab
   }
+
+  ul {
+    @apply list-disc pl-8
+  }
+
+  ol {
+    @apply list-decimal pl-8
+  }
+  
+  @import "typography";
   
 }
 
