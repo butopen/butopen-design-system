@@ -1,0 +1,17 @@
+.bo-notifications {
+  @apply fixed top-0 right-0 p-8 z-50;
+}
+
+.bo-notification {
+  @apply p-4 mb-4 shadow-md flex items-center rounded bg-white w-96 relative;
+  min-height: 60px;
+}
+
+.bo-notification-close {
+  @extend .bo-notification;
+
+  &:after {
+    content: '×';
+    @apply absolute top-0 right-0 cursor-pointer font-bold px-1
+  }
+}
