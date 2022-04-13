@@ -1,7 +1,7 @@
 
 :root {
   --bo-theme-color: #00d789;
-  --bo-primary-color: #00d789;
+  --bo-primary-color: var(--bo-theme-color);
   --bo-secondary-color: #00c5d7;
 }
 
@@ -12,6 +12,10 @@
 @import "forms";
 @import "loading";
 @import "header";
+@import "steps";
+@import "notifications";
+@import "boxes";
+@import "progress";
 
 .use-bo-design-system {
 

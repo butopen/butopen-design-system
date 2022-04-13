@@ -10,17 +10,19 @@
         }
     </style>
 </head>
-<body class="use-bo-design-system">
+<body class='use-bo-design-system'>
 
+<div class='top-loading'></div>
+<!-- <div class='top-loading-delay-1s'></div> -->
 
-<header class="bo-header shadow">
-    <div class="bo-header-content max-w-3xl">
+<header class='bo-header shadow'>
+    <div class='bo-header-content max-w-3xl'>
         the header
     </div>
 </header>
 
 
-<div class="p-4">
+<div class='p-4'>
 
 
     <label>a label</label>
@@ -42,10 +44,44 @@
     </div>
     -->
 
-    <div class="w-24 h-24 relative">
-        <div class="bo-loading full-element">
-            <div class="spinner"></div>
+    <div class='w-24 h-24 relative'>
+        <div class='bo-loading full-element'>
+            <div class='spinner'></div>
         </div>
+    </div>
+
+
+    <div class='my-4'>
+        <div class='bo-step-done'>
+            STEP 1
+            <div>description of the step above</div>
+        </div>
+        <div class='bo-step-active'>
+            STEP 2
+            <div>description of the step above</div>
+        </div>
+        <div class='bo-step-todo'>
+            STEP 3
+            <div>description of the step above</div>
+        </div>
+    </div>
+
+
+    <div class='bo-box-info'>info box</div>
+    <div class='bo-box-error'>error box</div>
+    <div class='bo-box-success'>success box</div>
+    <div class='bo-box-warning'>warning box</div>
+
+
+    <div class='bo-notifications'>
+        <div class='bo-notification'>Base notification (not a box)</div>
+        <div class='bo-notification bo-box-error'>Error occurred</div>
+        <div class='bo-notification bo-box-info'>Info notification</div>
+        <div class='bo-notification bo-box-success'>Success notification</div>
+        <div class='bo-notification-close'>(with close button) Base notification (not a box)</div>
+        <div class='bo-notification-close bo-box-error'>(with close button) Error occurred</div>
+        <div class='bo-notification-close bo-box-info'>(with close button) Info notification</div>
+        <div class='bo-notification-close bo-box-success'>(with close button) Success notification</div>
     </div>
 
 </div>
