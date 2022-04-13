@@ -1,0 +1,23 @@
+._bo-box {
+  @apply mt-2 border-0 border-l-2 p-2 shadow text-sm;
+}
+
+.bo-box-info {
+  @extend ._bo-box;
+  @apply border-blue-700 bg-blue-50 text-blue-700;
+}
+
+.bo-box-warning {
+  @extend ._bo-box;
+  @apply border-orange-500 bg-orange-50 text-orange-500;
+}
+
+.bo-box-error {
+  @extend ._bo-box;
+  @apply border-red-700 bg-red-50 text-red-700;
+}
+
+.bo-box-success {
+  @extend ._bo-box;
+  @apply border-green-700 bg-green-50 text-green-700;
+}
