@@ -1,0 +1,34 @@
+@keyframes topLoading {
+  0% {
+    transform: translate(-100%, 0);
+  }
+  100% {
+    transform: translate(100%, 0);
+  }
+}
+
+.top-loading {
+  @apply fixed top-0 z-50 h-0.5 w-full bg-gradient-to-r from-white via-bop to-white opacity-50;
+  animation: topLoading 2.5s ease infinite;
+}
+
+.top-loading-delay-1s {
+  @apply fixed top-0 z-50 h-0.5 w-full bg-gradient-to-r from-white via-bop to-white opacity-50;
+  animation: topLoading 2.5s ease infinite;
+  animation-delay: 1.25s;
+}
+
+.top-loading-500ms {
+  @extend .top-loading;
+  animation-duration: 0.5s;
+}
+
+.top-loading-1s {
+  @extend .top-loading;
+  animation-duration: 1s;
+}
+
+.top-loading-10s {
+  @extend .top-loading;
+  animation-duration: 10s;
+}
