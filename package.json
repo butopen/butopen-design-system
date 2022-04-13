@@ -1,11 +1,12 @@
 {
   "name": "@butopen/design-system",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "A pure SCSS and Tailwind Design System. No JS. Framework agnostic",
   "main": "dist/index.css",
   "scripts": {
     "start": "node build.js -w",
-    "build": "node build.js"
+    "build": "node build.js",
+    "publish": "npm publish"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.0",
