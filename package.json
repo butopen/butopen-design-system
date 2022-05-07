@@ -1,6 +1,6 @@
 {
   "name": "@butopen/design-system",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "description": "A pure SCSS and Tailwind Design System. No JS. Framework agnostic",
   "main": "dist/index.css",
   "scripts": {

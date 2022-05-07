@@ -1,0 +1,26 @@
+@import "animations";
+
+.bo-popup {
+  @apply fixed top-0 left-0 z-20 flex h-screen w-screen items-center justify-center;
+  background-color: rgba(130, 130, 130, 0.46);
+}
+
+
+.bo-popup-close {
+  @apply absolute top-0 right-0 cursor-pointer w-5 h-5;
+  &:after {
+    content: '×';
+    @apply w-5 h-5 font-bold px-1 block text-gray-300
+  }
+}
+
+
+.bo-popup-content {
+  @extend .bo-animate-pop;
+  @apply relative block overflow-y-auto rounded-md border border-gray-100 bg-white text-left;
+  min-height: 200px;
+  min-width: 200px;
+  max-width: calc(100vw - 140px);
+  max-height: 80vh;
+}
+

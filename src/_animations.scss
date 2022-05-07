@@ -1,0 +1,57 @@
+/**
+Usage: if for instance you want to extend the button with this animation, in your scss add 
+
+.bo-button {
+  @extend .bo-animate-bg-on-hover 
+}
+ */
+
+.bo-animate-bg-on-hover {
+  background-image: radial-gradient(
+                  rgba(255, 255, 255, 0.3),
+                  rgba(255, 255, 255, 0)
+  );
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  transition: 0.1s;
+
+  &:hover {
+    background-image: radial-gradient(
+                    rgba(255, 255, 255, 0.4),
+                    rgba(255, 255, 255, 0)
+    );
+    transition: 0.9s;
+    background-size: 200% 200%;
+  }
+}
+
+@keyframes pop {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.bo-animate-pop {
+  animation: 200ms ease-out pop;
+}
+
+@keyframes down {
+  0% {
+    opacity: 0;
+    transform: translate(0, -100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+}
+
+.bo-animate-down {
+  animation: 200ms ease-out down;
+}

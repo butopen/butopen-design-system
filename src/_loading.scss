@@ -3,26 +3,29 @@ $main-color: var(--bo-theme-color);
 .bo-loading {
   @apply inline-block;
 
-  .spinner {
-    @apply animate-spin w-5 h-5 border-2 rounded-full inline-flex align-middle;
+  &:before {
+    content: "";
+    @apply inline-flex h-5 w-5 animate-spin rounded-full border-2 align-middle;
     border-color: $main-color $main-color transparent transparent;
-  }
-
-  &.full-screen {
-    @apply flex items-center w-screen h-screen bg-gray-700 opacity-70 absolute top-0;
-    .spinner {
-      @apply w-28 h-28 border-4 mx-auto;
-      border-color: $main-color $main-color rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
-    }
-  }
-
-  &.full-element {
-    @apply flex items-center w-full h-full bg-gray-700 opacity-70 absolute top-0;
-    .spinner {
-      @apply w-6 h-6 border-2 mx-auto;
-      border-color: $main-color $main-color rgba(255, 255, 255, 0.2) rgba(255, 255, 255, 0.2);
-    }
   }
 }
 
+.bo-loading-full-screen {
+  @extend .bo-loading;
+  @apply fixed top-0 left-0 block flex h-screen w-screen items-center bg-gray-700 opacity-70;
+  z-index: 10000;
 
+  &:before {
+    @apply mx-auto h-28 w-28 border-4;
+    border-color: $main-color $main-color rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3);
+  }
+}
+
+.bo-loading-full-element {
+  @extend .bo-loading;
+  @apply absolute top-0 left-0 block flex h-full w-full items-center bg-gray-700 opacity-70;
+  &:before {
+    @apply mx-auto h-6 w-6 border-2;
+    border-color: $main-color $main-color rgba(255, 255, 255, 0.3) rgba(255, 255, 255, 0.3);
+  }
+}
