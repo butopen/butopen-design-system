@@ -1,0 +1,45 @@
+$main-color: var(--bo-theme-color);
+
+.bo-table {
+  @apply divide-y divide-gray-200 p-4 bg-white;
+  thead {
+    th {
+      @apply py-2 px-1 text-center text-sm font-medium text-bop tracking-wider;
+    }
+  }
+
+  tbody {
+    @apply bg-white text-xs divide-y divide-gray-200;
+    tr {
+      @apply hover:bg-gray-100
+    }
+  }
+
+  td {
+    @apply py-2 px-1 mx-1 text-center;
+  }
+
+  &.bo-striped {
+    tbody {
+      tr:nth-child(even) {
+        @apply bg-gray-50 hover:bg-gray-100
+      }
+    }
+  }
+}
+
+.bo-table-compact {
+  @extend .bo-table;
+
+  thead {
+    th {
+      @apply py-1 px-0 text-xs;
+    }
+  }
+
+  tbody {
+    td {
+      @apply py-1 px-0 text-xs;
+    }
+  }
+}

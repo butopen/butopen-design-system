@@ -1,0 +1,9 @@
+.bo-badge {
+  @apply p-1 text-sm text-white rounded inline-block select-none m-1;
+}
+
+.bo-badge-sup {
+  font-size: 8px !important;
+  line-height: 8px !important;
+  @apply uppercase text-gray-50 font-bold;
+}
